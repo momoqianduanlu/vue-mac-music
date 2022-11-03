@@ -3,6 +3,7 @@ import router from './router'
 import App from './App'
 
 import 'element-plus/dist/index.css'
+import '@assets/scss/reset.scss'
 
 const app = createApp(App)
 app.use(router)
