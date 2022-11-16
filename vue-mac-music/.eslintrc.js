@@ -18,6 +18,12 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     'no-prototype-builtins': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'vue/multi-word-component-names': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      alias: [['@', './src']],
+    },
   },
   overrides: [
     {

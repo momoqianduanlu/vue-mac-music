@@ -4,6 +4,8 @@ const Components = require('unplugin-vue-components/webpack')
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 const path = require('path')
 
+console.log(path.resolve(__dirname, 'src/components'))
+
 module.exports = defineConfig({
   transpileDependencies: true,
   chainWebpack: (config) => {
