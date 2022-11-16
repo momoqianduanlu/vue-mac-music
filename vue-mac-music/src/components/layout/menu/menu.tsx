@@ -3,7 +3,7 @@ import style from './menu.module.scss'
 
 console.log(style)
 
-export default defineComponent({
+const Menu = defineComponent({
   name: 'LayoutMenu',
   setup() {
     return () => {
@@ -16,3 +16,5 @@ export default defineComponent({
     }
   },
 })
+
+export default Menu

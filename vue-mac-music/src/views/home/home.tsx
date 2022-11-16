@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 import { ElContainer, ElHeader, ElAside, ElMain } from 'element-plus'
-import Header from '@/component/layout/header/header'
-import Menu from '@/component/layout/menu/menu'
+import Header from '../../components/layout/header/header'
+import Menu from '../../components/layout/menu/menu'
 
 const Home = defineComponent({
   name: 'Home',
