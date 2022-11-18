@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import style from './menu.module.scss'
+import style from './index.module.scss'
 
 console.log(style)
 

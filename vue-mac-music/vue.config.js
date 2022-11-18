@@ -4,8 +4,6 @@ const Components = require('unplugin-vue-components/webpack')
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 const path = require('path')
 
-console.log(path.resolve(__dirname, 'src/components'))
-
 module.exports = defineConfig({
   transpileDependencies: true,
   chainWebpack: (config) => {
@@ -24,6 +22,12 @@ module.exports = defineConfig({
           @import "@/assets/scss/variable.scss";
           @import "@/assets/scss/mixin.scss";
         `,
+      },
+      css: {
+        modules: {
+          // 配置css modules
+          localIdentName: '[name]-[local]-[hash:base64:5]',
+        },
       },
     },
   },
